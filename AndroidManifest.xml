@@ -5,16 +5,20 @@
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="17"/>
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application android:configChanges="orientation" android:label="@string/app_name" android:icon="@drawable/ic_launcher_cf">
-        <activity android:name="com.coinsfriendly.mobile.GraphsActivity">
+        <activity android:name=".graphs.GraphsMenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.coinsfriendly.mobile.MenuActivity"></activity>
-        <activity android:name="com.coinsfriendly.mobile.PointOfSaleActivity"/>
-        <activity android:name="com.coinsfriendly.mobile.InviteActivity"/>
-        <activity android:name="com.coinsfriendly.mobile.TxHistoryActivity"/>
+        <activity android:name=".graphs.GraphsActivity"></activity>
+        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".PointOfSaleActivity"/>
+        <activity android:name=".InviteActivity"/>
+        <activity android:name=".TxHistoryActivity"/>
     </application>
+
 </manifest>
