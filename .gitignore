@@ -1,0 +1,13 @@
+bin
+gen
+out
+nbandroid
+private
+local.properties
+target
+.settings
+.project
+.classpath
+.idea
+*.iml
+*.apk

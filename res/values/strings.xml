@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CoinsFriendly.com</string>
+    <string name="app_name">Bitcoin Price Forecast</string>
     <string name="menuitemtext1">POINT OF SALE</string>
     <string name="menuitemtext2">TRANSACTION HISTORY</string>
     <string name="menuitemtext3">INVITE NEW MERCHANTS</string>
     <string name="menuitemtext4">SETTINGS</string>
+    <string name="coins_friendly_link">http://www.coinsfriendly.com/</string>
 </resources>

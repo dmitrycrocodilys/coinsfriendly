@@ -2,6 +2,7 @@ package com.coinsfriendly.mobile.graphs;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import com.coinsfriendly.mobile.R;
@@ -33,6 +34,12 @@ public class GraphsMenuActivity extends Activity {
         bundle.putString("version", "free");
         intent.putExtras(bundle);
         startActivity(intent);
+    }
+
+    public void logoClicked(View v)
+    {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.coins_friendly_link)));
+        startActivity(browserIntent);
     }
 
 }

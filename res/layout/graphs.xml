@@ -12,33 +12,43 @@
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="0dp" android:layout_weight="20">
-        <Space
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="5"/>
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent" android:layout_weight="40">
-            <ImageView
+            <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:id="@+id/imageView" android:src="@drawable/logo" android:layout_weight="22"
-                    />
-            <Space
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="9"/>
+                    android:layout_height="0dp" android:layout_weight="28">
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent" android:layout_weight="40">
+                    <include layout="@layout/logo" android:layout_width="fill_parent" android:layout_height="0dp"
+                             android:layout_weight="45"/>
+                    <ProgressBar
+                            style="?android:attr/progressBarStyleLarge"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:id="@+id/progressBar" android:layout_weight="10" android:visibility="visible"/>
+                    <ImageView android:layout_width="fill_parent" android:layout_height="0dp" android:id="@+id/imageView"
+                               android:src="@drawable/line2" android:layout_weight="3"/>
+                </LinearLayout>
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"/>
+            </LinearLayout>
             <WebView
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:id="@+id/graphsWebView" android:layout_weight="90"/>
+                    android:id="@+id/graphsWebView" android:layout_weight="90" android:visibility="invisible"/>
 
         </LinearLayout>
-        <Space
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="5"/>
     </LinearLayout>
     <Space
             android:layout_width="fill_parent"
