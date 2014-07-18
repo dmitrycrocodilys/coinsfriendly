@@ -33,7 +33,6 @@ public class GraphsActivity extends Activity {
         public void onPageFinished(WebView view, String url)
         {
             Log.d("WebView", "onPageFinished()");
-            //super.onPageFinished(view, url);
             WindowManager manager = (WindowManager) GraphsActivity.this.getSystemService(Context.WINDOW_SERVICE);
             DisplayMetrics metrics = new DisplayMetrics();
             manager.getDefaultDisplay().getMetrics(metrics);
@@ -43,7 +42,7 @@ public class GraphsActivity extends Activity {
                 public void run() {
                     runOnUiThread(new Runnable() {
                         public void run() {
-                            progressBar.setVisibility(View.INVISIBLE);
+                            progressBar.setVisibility(View.GONE);
                             graphsWebView.setVisibility(View.VISIBLE);
                         }
                     });
@@ -74,12 +73,12 @@ public class GraphsActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.graphs);
         loadWebView();
     }
 
     private void loadWebView()
     {
-        setContentView(R.layout.graphs);
         graphsWebView = (WebView) findViewById(R.id.graphsWebView);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         graphsWebView.getSettings().setJavaScriptEnabled(true);

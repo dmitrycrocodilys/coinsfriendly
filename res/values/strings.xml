@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Bitcoin Price Forecast</string>
+    <string name="app_name">Bitcoin Nostradamus</string>
+    <string name="app_name_actionbar">Bitcoin NostrAdamus</string>
     <string name="menuitemtext1">POINT OF SALE</string>
     <string name="menuitemtext2">TRANSACTION HISTORY</string>
     <string name="menuitemtext3">INVITE NEW MERCHANTS</string>
     <string name="menuitemtext4">SETTINGS</string>
+    <string name="graphs_menu_item_lite">LITE VERSION</string>
+    <string name="graphs_menu_item_full">FULL VERSION</string>
     <string name="coins_friendly_link">http://www.coinsfriendly.com/</string>
+    <string name="about">
+        The Graphs and Analysis of Bitcoin price past and future performance
+        provided by CoinsFriendly.com include forecasts, projections and other
+        predictive statements that represent our assumptions and expectations in
+        light of currently available information. These forecasts, etc., are
+        based on Bitcoin industry trends, circumstances involving various state
+        and non-state actors and other factors, such as new regulation being
+        introduced, and/or new scientific discoveries to do with Blockchain and
+        Bitcoin protocol, etc. They involve risks, variables and uncertainties.
+        The Bitcoin price actual performance results may differ from those
+        projected in these forecasts. Consequently, no guarantee is presented or
+        implied as to the accuracy of specific forecasts, projections or
+        predictive statements contained herein. Your capital is at risk.
+        CoinsFriendly.com does not assume any responsibility for the profits or
+        losses made while using our data analysis products in trading in Bitcoin.
+    </string>
+
 </resources>
