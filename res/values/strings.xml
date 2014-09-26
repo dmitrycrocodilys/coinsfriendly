@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Bitcoin Nostradamus</string>
+    <string name="app_name">NostrAdamus</string>
     <string name="app_name_actionbar">Bitcoin NostrAdamus</string>
     <string name="menuitemtext1">POINT OF SALE</string>
     <string name="menuitemtext2">TRANSACTION HISTORY</string>
